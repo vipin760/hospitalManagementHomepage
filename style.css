@@ -74,6 +74,7 @@ section:nth-child(even){
     background-color: #fff;
 }
 
+
 .header{
     display: flex;
     top:0;
@@ -112,6 +113,9 @@ section:nth-child(even){
     cursor: pointer;
     display: none;
 }
+
+
+
 .home{
     display: flex;
     align-items: center;
@@ -124,6 +128,9 @@ section:nth-child(even){
 }
 .home .image img{
     width: 100%;
+}
+.home .image img:hover{
+    padding-left: 2rem;
 }
 .home .content{
     flex: 1 1 45rem;
@@ -140,6 +147,8 @@ section:nth-child(even){
     line-height: 1.8;
     padding: 1rem 0;
 }
+
+
 .icons-container{
     display: grid;
     gap: 2rem;
@@ -159,6 +168,9 @@ section:nth-child(even){
     color: var(--green);
     padding-bottom: .7rem;
 }
+.icons-container .icons i:hover{
+    padding-left: 2rem;
+}
 .icons-container .icons h3{
     font-size: 4.5rem;
     color: var(--black);
@@ -169,6 +181,9 @@ section:nth-child(even){
     font-size: 1.7rem;
     color: var(--light-color);
 }
+
+
+
 .services .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(27rem,1fr));
@@ -197,6 +212,7 @@ section:nth-child(even){
     font-size: 1.4rem;
     line-height: 2;
 }
+
 .about .row{
     display: flex;
     align-items: center;
@@ -224,6 +240,8 @@ section:nth-child(even){
     font-size: 1.5rem;
     line-height: 1.8;
 }
+
+
 .doctors .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(27rem,1fr));
@@ -309,6 +327,7 @@ section:nth-child(even){
 .book .row form .btn{
     padding: 1rem 3rem;
 }
+
 .review .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(27rem,1fr));
@@ -414,10 +433,41 @@ section:nth-child(even){
     line-height: 1.8;
     padding: 1rem 0;
 }
-
-
-
-
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(22rem,1fr));
+    gap: 2rem;
+}
+.footer .box-container .box h3{
+    font-size: 2.5rem;
+    color: var(--black);
+    padding: 1rem 0;
+}
+.footer .box-container .box a{
+    display: block;
+    font-size: 1.5rem;
+    color: var(--light-color);
+    padding: 1rem 0;
+}
+.footer .box-container .box a i{
+    padding-right: .5rem;
+    color: var(--green);
+}
+.footer .box-container .box a:hover i{
+    padding-right: 2rem;
+}
+.footer .credit{
+    padding: 1rem;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--light-color);
+    border-top: .1rem solid rgba(0, 0, 0 ,.1);
+}
+.footer .credit span{
+    color: var(--green);
+}
 
 
 
