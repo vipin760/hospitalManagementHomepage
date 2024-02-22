@@ -1,359 +1,53 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <!--font awesome css link-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
-
 <body>
-    <!--header section starts -->
-    <header class="header">
-        <a href="" class="logo"> <i class="fas fa-heartbeat"></i>MedTech</a>
-        <nav class="navbar">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#doctors">Doctors</a>
-            <a href="#book">Book</a>
-            <a href="#review">Review</a>
-            <a href="#blog">Blog</a>
+    <div id="mainNavigation">
+        <nav role="navigation">
+          <div class="py-3 text-center border-bottom">
+            <img src="/static_files/images/logos/logo_3_white_2.png" alt="" class="invert">
+          </div>
         </nav>
-        <div id="menu-btn" class="fas fa-bars"></div>
-    </header>
-    <!--header setcion end-->
-    <!--home section starts-->
-    <section class="home" id="home" data-aos="fade-left">
-        <div class="image">
-            <img data-aos="zoom-in" src="assets/269.jpg" alt="">
+        <div class="navbar-expand-md">
+          <div class="navbar-dark text-center my-2">
+            <button class="navbar-toggler w-75" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span> <span class="align-middle">Menu</span>
+            </button>
+          </div>
+          <div class="text-center mt-3 collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav mx-auto ">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Book Hotel</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Destinations</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Policy</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Company
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Blog</a></li>
+                  <li><a class="dropdown-item" href="#">About Us</a></li>
+                  <li><a class="dropdown-item" href="#">Contact us</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="content">
-            <h3 data-aos="fade-down">stay safe, stay healthy</h3>
-            <p data-aos="fade-left">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-            <a href="#" data-aos="fade-up"  class="btn" data-aos="fade-left">contact us<span class="fas fa-chevron-right"></span></a>
-        </div>
-    </section>
-    <!--home section ends-->
-    <!--icon section starts-->
-    <section class="icons-container">
-        <div class="icons" data-aos="fade-down-right">
-            <i class="fas fa-user-md"></i>
-            <h3>140+</h3>
-            <p>doctors at work</p>
-        </div>
-        <div class="icons" data-aos="fade-down-right">
-            <i class="fas fa-users"></i>
-            <h3>1440+</h3>
-            <p>satisfied patients</p>
-        </div>
-        <div class="icons" data-aos="fade-down-right">
-            <i class="fas fa-procedures"></i>
-            <h3>500+</h3>
-            <p>bed faculties</p>
-        </div>
-        <div class="icons" data-aos="fade-down-right">
-            <i class="fas fa-hospital"></i>
-            <h3>80+</h3>
-            <p>available</p>
-        </div>
-    </section>
-    <!--icon section end-->
-    <!--service section start-->
-    <section class="services" id="services">
-        <h1 class="heading" data-aos="fade-right">our <span>services</span></h1>
-        <div class="box-container">
-            <div class="box" data-aos="fade-down-right">
-                <i class="fas fa-notes-medical"></i>
-                <h3>free checkups</h3>
-                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-                <a href="" class="btn">learn more <span class="fas fa-chevron-right"></span></a>
-            </div>
-            <div class="box" data-aos="fade-down-right">
-                <i class="fas fa-ambulance"></i>
-                <h3>24/7 ambulance</h3>
-                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-                <a href="" class="btn">learn more <span class="fas fa-chevron-right"></span></a>
-            </div>
-            <div class="box" data-aos="fade-down-right">
-                <i class="fas fa-user-md"></i>
-                <h3>expert doctors</h3>
-                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-                <a href="" class="btn">learn more <span class="fas fa-chevron-right"></span></a>
-            </div>
-            <div class="box" data-aos="fade-down-right">
-                <i class="fas fa-pills"></i>
-                <h3>medicines</h3>
-                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-                <a href="" class="btn">learn more <span class="fas fa-chevron-right"></span></a>
-            </div>
-            <div class="box" data-aos="fade-down-right">
-                <i class="fas fa-notes-medical"></i>
-                <h3>free checkups</h3>
-                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-                <a href="" class="btn">learn more <span class="fas fa-chevron-right"></span></a>
-            </div>
-            <div class="box" data-aos="fade-down-right">
-                <i class="fas fa-procedures"></i>
-                <h3>bed faculties</h3>
-                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-                <a href="" class="btn">learn more <span class="fas fa-chevron-right"></span></a>
-            </div>
-            <div class="box" data-aos="fade-down-right">
-                <i class="fas fa-heartbeat"></i>
-                <h3>total care</h3>
-                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-                <a href="" class="btn">learn more <span class="fas fa-chevron-right"></span></a>
-            </div>
-        </div>
-    </section>
-    <!--service section ends-->
-    <!--about section start-->
-    <section class="about" id="about">
-        <h1 class="heading" data-aos="zoom-in"><span>about</span>us</h1>
-        <div class="row">
-            <div class="image">
-                <img data-aos="slide-down" src="assets/doctor_consultation_03.jpg" alt="">
-            </div>
-            <div class="content" data-aos="zoom-out-right">
-                <h3>we take care of your healthy</h3>
-                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-                <a href="" class="btn">learn more<span class="fas fa-chevron-right"></span></a>
-            </div>
-        </div>
-    </section>
-    <!--about section end-->
-    <!-- doctors section starts -->
-    <section class="doctors" id="doctors">
-        <h1 class="heading" data-aos="zoom-out-right">
-            our <span>doctors</span>
-        </h1>
-        <div class="box-container">
-            <div class="box" data-aos="zoom-in-down">
-                <img src="assets/portrait-female-working-nurse.jpg" alt="">
-                <h3>jhone doe</h3>
-                <span>expert doctor</span>
-                <div class="share">
-                    <a href="#" class="fab fa-facebook-f"></a>
-                    <a href="" class="fab fa-twitter"></a>
-                    <a href="" class="fab fa-instagram"></a>
-                    <a href="" class="fab fa-linkedin"></a>
-                </div>
-            </div>
-            <div class="box" data-aos="zoom-in-down">
-                <img src="assets/portrait-female-working-nurse.jpg" alt="">
-                <h3>jhone doe</h3>
-                <span>expert doctor</span>
-                <div class="share">
-                    <a href="#" class="fab fa-facebook-f"></a>
-                    <a href="" class="fab fa-twitter"></a>
-                    <a href="" class="fab fa-instagram"></a>
-                    <a href="" class="fab fa-linkedin"></a>
-                </div>
-            </div>
-            <div class="box" data-aos="zoom-in-down">
-                <img src="assets/portrait-female-working-nurse.jpg" alt="">
-                <h3>jhone doe</h3>
-                <span>expert doctor</span>
-                <div class="share">
-                    <a href="#" class="fab fa-facebook-f"></a>
-                    <a href="" class="fab fa-twitter"></a>
-                    <a href="" class="fab fa-instagram"></a>
-                    <a href="" class="fab fa-linkedin"></a>
-                </div>
-            </div>
-            <div class="box" data-aos="zoom-in-down">
-                <img src="assets/portrait-female-working-nurse.jpg" alt="">
-                <h3>jhone doe</h3>
-                <span>expert doctor</span>
-                <div class="share">
-                    <a href="#" class="fab fa-facebook-f"></a>
-                    <a href="" class="fab fa-twitter"></a>
-                    <a href="" class="fab fa-instagram"></a>
-                    <a href="" class="fab fa-linkedin"></a>
-                </div>
-            </div>
-            <div class="box" data-aos="zoom-in-down">
-                <img src="assets/portrait-female-working-nurse.jpg" alt="">
-                <h3>jhone doe</h3>
-                <span>expert doctor</span>
-                <div class="share">
-                    <a href="#" class="fab fa-facebook-f"></a>
-                    <a href="" class="fab fa-twitter"></a>
-                    <a href="" class="fab fa-instagram"></a>
-                    <a href="" class="fab fa-linkedin"></a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- doctors section ends -->
-    <!-- booking section start -->
-    <section class="book" id="book">
-        <h1 class="heading" data-aos="zoom-out-right">
-            <span>book</span>now
-        </h1>
-        <div class="row">
-            <div class="image">
-                <img src="assets/portrait-female-working-nurse.jpg" alt="">
-            </div>
-            <form action="">
-                <h3>book appointment</h3>
-                <input type="text" placeholder="your name" class="box">
-                <input type="number" placeholder="your number" class="box">
-                <input type="email" placeholder="your email" class="box">
-                <input type="date" class="box">
-                <input type="submit" value="book now" class="btn">
-            </form>
-        </div>
-    </section>
-    <!-- booking secton end -->
-
-    <!-- review section starts -->
-    <section class="review" id="review">
-        <h1 class="heading">client's <span>review</span></h1>
-        <div class="box-container">
-            <div class="box">
-                <img src="assets/portrait-female-working-nurse.jpg" alt="">
-                <h3>jhon doe</h3>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <p class="text">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-            </div>
-            <div class="box">
-                <img src="assets/portrait-female-working-nurse.jpg" alt="">
-                <h3>jhon doe</h3>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <p class="text">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-            </div>
-            <div class="box">
-                <img src="assets/portrait-female-working-nurse.jpg" alt="">
-                <h3>jhon doe</h3>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <p class="text">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-            </div>
-        </div>
-    </section>
-    <!--review section end-->
-    <!--blog section start-->
-    <section class="blogs" id="blogs">
-        <h1 class="heading">our <span>blogs</span></h1>
-        <div class="box-container">
-            <div class="box">
-                <div class="image">
-                    <img src="assets/269.jpg" alt="">
-                </div>
-                <div class="content">
-                    <div class="icon">
-                        <a href=""><i class="fas fa-calender"></i>1st may, 2021</a>
-                        <a href=""><i class="fas fa-user">b admin</i></a>
-                    </div>
-                    <h3>blog title goes here</h3>
-                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-                    <a href="" class="btn">learn more<span class="fas fa-chevron-right"></span></a>
-                </div>
-            </div>
-            <div class="box">
-                <div class="image">
-                    <img src="assets/269.jpg" alt="">
-                </div>
-                <div class="content">
-                    <div class="icon">
-                        <a href=""><i class="fas fa-calender"></i>1st may, 2021</a>
-                        <a href=""><i class="fas fa-user">b admin</i></a>
-                    </div>
-                    <h3>blog title goes here</h3>
-                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-                    <a href="" class="btn">learn more<span class="fas fa-chevron-right"></span></a>
-                </div>
-            </div>
-            <div class="box">
-                <div class="image">
-                    <img src="assets/269.jpg" alt="">
-                </div>
-                <div class="content">
-                    <div class="icon">
-                        <a href=""><i class="fas fa-calender"></i>1st may, 2021</a>
-                        <a href=""><i class="fas fa-user">b admin</i></a>
-                    </div>
-                    <h3>blog title goes here</h3>
-                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-                    <a href="" class="btn">learn more<span class="fas fa-chevron-right"></span></a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--blog section end-->
-    <!-- footer section start -->
-    <section class="footer">
-        <div class="box-container">
-            <div class="box">
-                <h3>quick links</h3>
-                <a href=""><i class="fas chevron-right"></i>home</a>
-                <a href=""><i class="fas chevron-right"></i>service</a>
-                <a href=""><i class="fas chevron-right"></i>about</a>
-                <a href=""><i class="fas chevron-right"></i>doctors</a>
-                <a href=""><i class="fas chevron-right"></i>book</a>
-                <a href=""><i class="fas chevron-right"></i>review</a>
-                <a href=""><i class="fas chevron-right"></i>blogs</a>
-            </div>
-            <div class="box">
-                <h3>our services</h3>
-                <a href=""><i class="fas chevron-right"></i>dental care</a>
-                <a href=""><i class="fas chevron-right"></i>massage therapy</a>
-                <a href=""><i class="fas chevron-right"></i>cardiology</a>
-                <a href=""><i class="fas chevron-right"></i>diagnosis</a>
-                <a href=""><i class="fas chevron-right"></i>ambulance service</a>
-            </div>
-            <div class="box">
-                <h3>contact info</h3>
-                <a href=""><i class="fas fa-phone"></i>+123-654-7890</a>
-                <a href=""><i class="fas fa-phone"></i>+098-745-6321</a>
-                <a href=""><i class="fas fa-envelope"></i>medtech@gmail.com</a>
-                <a href=""><i class="fas fa-envelope"></i>calicut , india - 048102</a>
-            </div>
-            <div class="box">
-                <h3>follow us</h3>
-                <a href=""><i class="fas fa-facebook"></i>facebook</a>
-                <a href=""><i class="fas fa-twitter"></i>twitter</a>
-                <a href=""><i class="fas fa-instagram"></i>instagram</a>
-                <a href=""><i class="fas fa-linkedin"></i>linkedIn</a>
-                <a href=""><i class="fas fa-pinterest"></i>pinterest</a>
-            </div>
-        </div>
-        <div class="credit">created by <span>vipin m</span> | all rights reserved</div>
-    </section>
-    <!-- footer section end -->
-
-<!--aos-->
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
-<!--javascript-->
-<script src="javascript.js"></script>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
-
 </html>
-
-<!-- https://github.com/michalsnik/aos?tab=readme-ov-file -->
